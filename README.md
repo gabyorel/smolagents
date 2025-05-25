@@ -212,7 +212,7 @@ for request in requests_to_search:
 Writing actions as code snippets is demonstrated to work better than the current industry practice of letting the LLM output a dictionary of the tools it wants to call: [uses 30% fewer steps](https://huggingface.co/papers/2402.01030) (thus 30% fewer LLM calls) and [reaches higher performance on difficult benchmarks](https://huggingface.co/papers/2411.01747). Head to [our high-level intro to agents](https://huggingface.co/docs/smolagents/conceptual_guides/intro_agents) to learn more on that.
 
 Especially, since code execution can be a security concern (arbitrary code execution!), we provide options at runtime:
-  - a secure python interpreter to run code more safely in your environment (more secure than raw code execution but still risky)
+  - a secure python interpreter to run code more safely in your environment (more secure than raw code execution but still risky).
   - a sandboxed environment using [E2B](https://e2b.dev/) or Docker (removes the risk to your own system).
 
 On top of this [`CodeAgent`](https://huggingface.co/docs/smolagents/reference/agents#smolagents.CodeAgent) class, we still support the standard [`ToolCallingAgent`](https://huggingface.co/docs/smolagents/reference/agents#smolagents.ToolCallingAgent) that writes actions as JSON/text blobs. But we recommend always using `CodeAgent`.
@@ -239,8 +239,8 @@ This comparison shows that open-source models can now take on the best closed mo
 ## Security
 
 Security is a critical consideration when working with code-executing agents. Our library provides:
-- Sandboxed execution options using [E2B](https://e2b.dev/) or Docker
-- Best practices for running agent code securely
+- Sandboxed execution options using [E2B](https://e2b.dev/) or Docker.
+- Best practices for running agent code securely.
 
 For security policies, vulnerability reporting, and more information on secure agent execution, please see our [Security Policy](SECURITY.md).
 
